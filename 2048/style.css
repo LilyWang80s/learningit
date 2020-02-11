@@ -1,0 +1,121 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  border: 0;
+}
+.menu {
+  width: 365px;
+  height: 120px;
+  margin: 20px auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: red; */
+  
+}
+.menu img {
+  width: 120px;
+  height: 120px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.score, .topScore {
+  background-color: grey;
+  border-radius: 5px;
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.score, .others {
+  margin-left: 25px;
+  font-size: 15px;
+}
+.scoreName {
+  color: lightgrey;
+  font-size: 15px;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+}
+.scoreNum {
+  color: white;
+  font-size: 20px;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+}
+.topScore, .refresh {
+  margin-left: 15px;
+}
+.refresh, .others {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(247, 128, 85);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 30px;
+  color: white;
+  font-size: 15px;
+}
+.refresh {
+  outline: none;
+}
+.description {
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(3, 3, 3, 0.651);
+  font-size: 17px;
+}
+.main {
+  position: relative;
+  width: 365px;
+  height: 365px;
+  margin: 0 auto;
+}
+.gameArea {
+  width: 365px;
+  height: 365px;
+  border-radius: 5px;
+  background-color: rgb(158, 153, 153);
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+.upper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  /* background-color: rgba(255, 0, 0, .2); */
+  position: absolute;
+}
+.gameArea div {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(189, 182, 182);
+  border-radius: 5px;
+  margin-top: 9px;
+
+}
+#squareParent div {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  font-size: 45px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+  position: absolute;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>2048</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <div class="menu">
+    <img src="./picFor2048.png" alt="2048" />
+    <div>
+      <div class="score">
+        <div class="scoreName">得分</div>
+        <div class="scoreNum" id="currentScore">0</div>
+      </div>
+      <div class="others">菜单</div>
+    </div>
+    <div>
+      <div class="topScore"> 
+        <div class="scoreName">最高分</div>
+        <div class="scoreNum" id="highestScore">0</div>
+      </div>
+      <button class="refresh" id = "newGame">新游戏</button>
+    </div>
+  </div>
+  <div class="description">合并这些数字可以得到2048方块!</div>
+  <div class="main">
+    <div class="gameArea">
+      <div id="first"></div>
+      <div id="second"></div>
+      <div id="third"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="squareParent" class="upper"></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
