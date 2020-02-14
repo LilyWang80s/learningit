@@ -1,0 +1,144 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  border: 0;
+}
+body, html {
+  height: 100%;
+}
+body {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.mainArea {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgb(223, 223, 231);
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+}
+.header {
+  height: 80px;
+  background-color: rgb(127, 178, 245);
+  text-align: center;
+  line-height: 80px;
+  color: white;
+}
+.messArea {
+  /* min-height: 40px; */
+  /* background-color: white; */
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  border: 0.5px solid rgba(223, 223, 231);
+}
+.mess {
+  padding: 5px;
+  width: 340px;
+  /* min-height: 20px; */
+  max-height: 100px;
+  margin: 5px 5px;
+  border: 0.5px solid rgb(223, 223, 231);
+  outline: none;
+  line-height:20px;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  font-size: 14px;
+ 
+}
+.mess:focus {
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+.submit {
+  width: 35px;
+  margin-bottom: 5px;
+  height: 30px;
+  text-align: center;
+  line-height: 20px;
+  outline: none;
+  background-color: rgb(252, 252, 252);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  /* position: absolute; */
+  /* bottom: 5px; */
+  /* right: 5px; */
+}
+
+.submit:active {
+  background: rgb(223, 219, 219);
+  /* box-shadow: 0 0 5px rgba(0,0,0,.1); */
+}
+.submit:hover {
+  box-shadow: 0 0 5px rgba(43, 33, 33, 0.5);
+}
+.submit:disabled {
+  box-shadow: none;
+}
+.history {
+  background-color: rgba(242, 242, 242, 0.2);
+  /* height: 480px; */
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+/* .inputMess {
+  background-color: rgb(58, 209, 58);
+  display: inline-block;
+  min-height: 20px;
+  max-width: 300px;
+  line-height: 20px;
+  text-align: center;
+  word-break: break-word;
+  margin: 10px 0 10px 10px;
+  padding: 5px;
+}
+.fbMess {
+  background-color: white;
+  min-height: 30px;
+  max-width: 300px;
+  line-height: 30px;
+  text-align: center;
+} */
+.inputBox, .fbBox {
+  min-height: 30px;
+  margin: 15px 15px 15px 15px;
+}
+.inputMess {
+  background-color: rgb(127, 178, 245);
+  min-height: 20px;
+  max-width: 300px;
+  padding: 5px;
+  line-height: 20px;
+  text-align: left;
+  display: inline-block;
+  color: white;
+  word-wrap: break-word;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.fbBox {
+  text-align: right;
+}
+.fbMess {
+  background-color: white;
+  border: 0.5px solid rgb(223, 223, 231);
+  min-height: 20px;
+  max-width: 300px;
+  padding: 5px;
+  line-height: 20px;
+  text-align: left;
+  display: inline-block;
+  word-wrap: break-word;
+  border-radius: 5px;
+  font-size: 14px;
+}
